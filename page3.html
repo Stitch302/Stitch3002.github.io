@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #504caf;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+<meta charset="utf-8">
+<title>CinemaScope</title>
+<style> 
+.column {
+    width: 48%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background: #97ddff;
+    float: left;
+}
+.container .column:first-child{
+    margin-right: 4%;
+}
+@media screen and (max-width: 767px){
+    .column {
+        width: 100%;
+        padding: 5px 20px;
+        float: none;
+    }
+    .container .column:first-child{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home Page</a>
+  
+  <a href="page2.html">Film Festival</a>
+  
+  <a href="page3.html">Kid Movies</a>
+  
+  <a href="page4.html">Adult Movies</a>
+  
+   <a href="page5.html">Contact Us</a>
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>CinemaScope</h2>
+  <p>Kid Movies</p>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<div class="container">
+		<div class="column">
+            <p> This page is for the current kids movies we are showing at CinemaScope. (Due to the pandemic we are showing some older films since there is no current ones releasing.) </p>
+        </div>
+
+<table>
+
+  <tr>
+    <th>Trailer</th>
+    <th>Movie</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td> <iframe width="420" height="345" src="https://www.youtube.com/embed/rNk1Wi8SvNc"> </iframe> </td>
+    <td>         Toy Story </td>
+    <td> Taking place in a world where anthropomorphic toys come to life when humans are not present, the plot focuses on the relationship between an old-fashioned pull-string cowboy doll named Woody and an astronaut action figure, Buzz Lightyear, as they evolve from rivals competing for the affections of their owner Andy. </td>
+  </tr>
+  <tr>
+    <td> <iframe width="420" height="345" src="https://www.youtube.com/embed/kkrGBlvGK4I"> </iframe> </td>
+    <td> Over The Hedge  </td>
+    <td>  A scheming raccoon fools a mismatched family of forest creatures into helping him repay a debt of food, by invading the new suburban sprawl that popped up while they were hibernating ... and learns a lesson about family himself.  </td>
+  </tr>
+  <tr>
+    <td> <iframe width="420" height="345" src="https://www.youtube.com/embed/YIwja07VVg4"> </iframe>  </td>
+    <td> Flushed Away </td>
+    <td> FLUSHED AWAY tells the story of a snobby rat named Roddy (voiced by Hugh Jackman) who's living a cushy life in a London flat. ... All Roddy wants is to get back home, but first he and Rita have to contend with the malicious Toad (Ian McKellen). </td>
+  </tr>
+  <tr>
+    <td> <iframe width="420" height="345" src="https://www.youtube.com/embed/wZdpNglLbt8"> </iframe> </td>
+    <td> Finding Nemo </td>
+    <td> Finding Nemo is a 2003 American computer-animated adventure film produced by Pixar Animation Studios and released by Walt Disney Pictures.  It tells the story of an overprotective clownfish named Marlin, who, along with a regal blue tang named Dory searches for his missing son Nemo. </td>
+  </tr>
+  <tr>
+    <td> <iframe width="420" height="345" src="https://www.youtube.com/embed/fZ_JOBCLF-I"> </iframe> </td>
+    <td>  The Lego Movie </td>
+    <td> The LEGO Movie is a 3D animated film which follows lead character, Emmet a completely ordinary LEGO mini-figure who is identified as the most "extraordinary person" and the key to saving the Lego universe. Emmet and his friends go on an epic journey to stop the evil tyrant, Lord Business. </td>
+  </tr>
+  <tr>
+    <td> <iframe width="420" height="345" src="https://www.youtube.com/embed/VUBFCaWiQ28"> </iframe> </td>
+    <td>  Chicken Little </td>
+    <td> After ruining his reputation with the town, a courageous chicken must come to the rescue of his fellow citizens when aliens start an invasion. ... After Chicken Little causes widespread panic, when he mistakes a falling acorn for a piece of the sky, the young chicken is determined to restore his reputation. </td>
+  </tr>
+  
+</table>
+
+</body>
+
+</html>
